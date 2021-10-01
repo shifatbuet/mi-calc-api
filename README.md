@@ -78,11 +78,15 @@ curl -d "input_1=1&input_2=2&operation=add" -X POST http://localhost:8090/api/ca
 
 #### Example calculate response
 
-```json
+```
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    58    0    25  100    33    223    294 --:--:-- --:--:-- --:--:--   517
 {
-"success":true,
-"data":3 
+   "data" : 3,
+   "success" : true
 }
+
 ```
 ## Tests
 
@@ -110,7 +114,7 @@ OK (13 tests, 26 assertions)
 - For checking logs: 
 
 ```bash
-tail -f storage/logs/laravel-"`date +'%Y-%m-%d'`".log
+docker exec -it php7-container tail -f storage/logs/laravel-"`date +'%Y-%m-%d'`".log
 ```
 
 - Log output at a glimpse without errors
