@@ -30,8 +30,8 @@ You can check all the laravel related dependecies [here](https://laravel.com/doc
 ## Install application.
 
 1. Clone repository and setup.<br>
-`git clone git@github.com:shifatbuet/rest-api.git`<br>
-`cd rest-api`<br>
+`git clone https://github.com/shifatbuet/mi-calc-api.git`<br>
+`cd mi-calc-api`<br>
 `cp src/.env.example src/.env`<br>
 2. Start docker.<br>
 `docker-compose up --build -d`
